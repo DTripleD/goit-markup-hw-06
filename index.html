@@ -412,93 +412,59 @@
           </ul>
         </div>
       </section>
+
+      <section class="section">
+        <div class="container container-clients">
+          <h2 class="clients">Постійні клієнти</h2>
+          <ul class="list clients-list">
+            <li class="clients-item">
+              <a href="" class="link clients-link" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <svg class="" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo1"></use>
+                </svg>
+               </a>
+            </li>
+            <li class="clients-item">
+              <a href="" class="link clients-link" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <svg class="" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="" class="link clients-link" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <svg class="" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="" class="link clients-link" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <svg class="" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="" class="link clients-link" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <svg class="" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="" class="link clients-link" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <svg class="" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-    <section class="section">
-      <div class="container container-clients">
-        <h2 class="clients">Постійні клієнти</h2>
-        <ul class="list clients-list">
-          <li class="clients-item">
-            <a
-              href=""
-              class="link clients-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="instagram"
-            >
-              <svg class="" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients-item">
-            <a
-              href=""
-              class="link clients-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="instagram"
-            >
-              <svg class="" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients-item">
-            <a
-              href=""
-              class="link clients-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="instagram"
-            >
-              <svg class="" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo3"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients-item">
-            <a
-              href=""
-              class="link clients-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="instagram"
-            >
-              <svg class="" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo4"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients-item">
-            <a
-              href=""
-              class="link clients-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="instagram"
-            >
-              <svg class="" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo5"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients-item">
-            <a
-              href=""
-              class="link clients-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="instagram"
-            >
-              <svg class="" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo6"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+
 
     <footer class="footer">
       <div class="container container-footer">
@@ -587,16 +553,71 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <strong class="footer-subscribe-text">Підпишіться на розсилку</strong>
+          <div class="footer-label-wrapper">
+            <label>
+              <input type="email" placeholder="E-mail" class="footer-mail-input">
+            </label>
+            <button type="submit" class="subscribe-btn">Підписатися</button>
+          </div>
+        </div>
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
           <svg class="modal-close" width="18" height="18">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
+        <p class="modal-article">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal-form" name="modal-form">
+          <div class="modal-form-group" role="group">
+            <label for="user_name" class="modal-label">Ім'я</label>
+            <div class="modal-form-wrapper">
+              <input type="text" id="user_name" name="user_name" class="modal-input">
+              <svg class="modal-form-icon" height="18" width="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+
+            <label for="modal_input" class="modal-label">Телефон</label>
+            <div class="modal-form-wrapper">
+              <input type="tel" id="modal_input" name="modal_input" class="modal-input">
+              <svg class="modal-form-icon" height="18" width="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+      
+            <label for="modal_input" class="modal-label">Пошта</label>
+            <div class="modal-form-wrapper">
+              <input type="email" id="modal_input" name="modal_input" class="modal-input">
+              <svg class="modal-form-icon" height="18" width="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+
+            <label class="modal-label" for="user_message">Коментар</label>
+            <textarea class="modal-form-message" name="user_message" id="user_message" placeholder="Введіть текст"></textarea>
+
+            <div class="modal-agreement-wrapper">
+              <input type="checkbox" id="user_agreement" name="user_agreement" class="modal-form-checkbox">
+              <label for="user_agreement" class="modal-agreement">
+                Погоджуюся з розсилкою та приймаю 
+                <a href="" class="modal-agreement-link">Умови договору</a>
+
+              </label>
+            </div>
+
+            <button class="modal-form-btn">Відправити</button>
+
+          </div>
+
+        </form>
+
       </div>
     </div>
     <script src="./js/modal.js"></script>
