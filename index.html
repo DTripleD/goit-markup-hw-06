@@ -668,13 +668,17 @@
             ></textarea>
 
             <div class="modal-agreement-wrapper">
+              <label for="user_agreement" class="modal-agreement">
               <input
                 type="checkbox"
                 id="user_agreement"
                 name="user_agreement"
                 class="modal-form-checkbox"
               />
-              <label for="user_agreement" class="modal-agreement">
+              <svg class="modal-form-agreement-icon" width="16" height="16">
+                <use class="uncheck" href="./images/icons.svg#icon-uncheck"></use>
+                <use class="check" href="./images/icons.svg#icon-check"></use>
+              </svg>
                 Погоджуюся з розсилкою та приймаю
                 <a href="" class="modal-agreement-link">Умови договору</a>
               </label>
@@ -688,3 +692,34 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+.modal-form-agreement-icon {
+border-radius: 3px;
+outline: 1px solid transparent;
+outline-offset: -1px;
+}
+
+.modal-form-checkbox:focus-visible + .modal-form-agreement-icon {
+outline-color: #ff6c00;
+-webkit-box-shadow: 0 0 0 2px rgba(255, 108, 0, 0.25);
+box-shadow: 0 0 0 2px rgba(255, 108, 0, 0.25);
+}
+
+.uncheck {
+opacity: 1;
+-webkit-transition: 300ms;
+transition: 300ms;
+}
+
+.modal-form-checkbox:checked + .modal-form-agreement-icon .uncheck {
+opacity: 0;
+}
+
+.check {
+opacity: 0;
+-webkit-transition: 300ms;
+transition: 300ms;
+}
+
+.modal-form-checkbox:checked + .modal-form-agreement-icon .check {
+opacity: 1;
